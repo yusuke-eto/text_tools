@@ -15,7 +15,7 @@ class WriteFile
 
   def wirte_file_text(pattern, replacment)
     text = read_file_text
-    File.open(path, "w") do |f|
+    File.open(path, "w") do |f|
       puts text.gsub(pattern, replacement)
     end
   end
